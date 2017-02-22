@@ -2,7 +2,21 @@
 .time-to{
   margin:15px;
   color: #263238;
-  font-size:3.5em;
   font-weight:bold;
   font-family: bangers;
+}
+@media (min-width: 500px)
+{
+  .time-to
+  {
+    font-size:3em;
+  }
+}
+@media (max-width:499px)
+{
+  .time-to
+  {
+    font-size:2em;
+    margin-left: 100px;
+  }
 }
