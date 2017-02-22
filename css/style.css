@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bangers);
 .time-to{
   margin:15px;
-  color: #263238;
+  color: #00acc1;
   font-weight:bold;
   font-family: bangers;
 }
@@ -19,4 +19,10 @@
     font-size:2em;
     margin-left: 100px;
   }
+}
+.section
+{
+  box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.05),
+   inset 0px 3px 15px 0px rgba(0,0,0,0.5),
+    0px 1px 1px 0px rgba(255,255,255,0.08);
 }
