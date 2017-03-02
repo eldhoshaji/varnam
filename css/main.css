@@ -346,7 +346,7 @@ h2 {
 .even-control-right {
   position: absolute;
   font-size: 24px;
-  color: #fff;
+  color: #101010;
   top: 0;
 }
 
@@ -569,7 +569,7 @@ h2 {
   background-image: url("../images/contact-bg.jpg");
   background-position:60% 0;
   background-size:contain;
-  
+
   position: relative;
 }
 
