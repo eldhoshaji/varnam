@@ -1,4 +1,4 @@
-document.getElementsByTagName("iframe")[0].setAttribute("width",window.innerWidth*1.1);
+//document.getElementsByTagName("iframe")[0].setAttribute("width",window.innerWidth*1.1);
 function menuToggle()
 {
 	var windowWidth = $(window).width();
