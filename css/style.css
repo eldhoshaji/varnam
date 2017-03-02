@@ -1,3 +1,7 @@
+.carousel-indicators item{
+	z-index:0;
+	position: relative;
+}
 @import url(https://fonts.googleapis.com/css?family=Bangers);
 .modal{
 	margin-left:10%;
@@ -47,6 +51,8 @@
   color: #00acc1;
   font-weight:bold;
   font-family: bangers;
+	z-index:999;
+	position: absolute;
 }
 @media (min-width: 500px)
 {
