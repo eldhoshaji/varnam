@@ -1,4 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Bangers);
+.modal-title,.modal-body p{
+	color:#212121;
+}
+.modal-body img{
+	max-width: 95%;
+	max-height: 50%;
+}
+.modal-header button{
+	color:red;
+	opacity:1.0;
+}
 .rule{
 	text-align:center;
 	color:#00e676;
