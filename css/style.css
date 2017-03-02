@@ -1,12 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Bangers);
 .rule{
 	text-align:center;
-	color:#82b1ff;
-	margin:65px;
+	color:#00e676;
+	margin-left: 40px;
 }
 .rule :hover{
-	color:#ffd400;
-	text-decoration:none;
+	text-decoration:underline;
 }
 .time-to{
   margin:15px;

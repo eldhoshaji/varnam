@@ -281,6 +281,21 @@ h2 {
  /*************************
 *******Event CSS******
 **************************/
+#rules{
+  background-color: #33888F;
+  background-image: url("../images/event-bg123.jpg");
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#rules h2{
+  color: #212121;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
 #event,#event2 {
   background-color: #33888F;
   background-image: url("../images/performar-bg.jpg");
@@ -294,7 +309,6 @@ h2 {
   right:0;
   top: 0
 }
-
 
 #event h2,#event2 h2 {
   color: #FFFFFF;
