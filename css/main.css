@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
-
-
-/*************************
-*******Typography******
-**************************/
-
 body {
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
@@ -255,7 +249,7 @@ h2 {
 
 #explore {
   background-color: #ffffff;
-  background-image: url("../images/event-bg.jpg");
+  background-image: url("../images/event-bg123.jpg");
   background-position: center bottom;
 
   background-repeat:no-repeat;
