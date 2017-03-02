@@ -281,7 +281,7 @@ h2 {
  /*************************
 *******Event CSS******
 **************************/
-#event {
+#event,#event2 {
   background-color: #33888F;
   background-image: url("../images/performar-bg.jpg");
   background-position: 50% 0;
@@ -296,7 +296,7 @@ h2 {
 }
 
 
-#event h2 {
+#event h2,#event2 h2 {
   color: #FFFFFF;
   font-size: 36px;
   font-weight: 300;
@@ -325,7 +325,7 @@ h2 {
   display: block;
 }
 
-#event-carousel {
+#event-carousel,#event-carousel2 {
   position: relative;
 }
 
