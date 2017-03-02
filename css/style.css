@@ -37,7 +37,9 @@
 		padding:0px;
 }
 #sponsor .item li a
-{}
+{
+	color:#f5f5f5;
+}
 #sponsor .item li
 {
   width:35%;
