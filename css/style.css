@@ -1,4 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Bangers);
+.rule{
+	text-align:center;
+	color:#82b1ff;
+	margin:65px;
+}
+.rule :hover{
+	color:#ffd400;
+	text-decoration:none;
+}
 .time-to{
   margin:15px;
   color: #00acc1;
