@@ -364,10 +364,11 @@ h2 {
 **************************/
 
 #about {
-  background-color: #75B46E;
+  background-color: #ffffff;
   position: relative;
   width: 100%;
   display: flex;
+    color: black;
 }
 
 .guitar2 {
