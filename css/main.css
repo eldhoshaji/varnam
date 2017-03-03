@@ -570,7 +570,7 @@ h2 {
   background-color: #ffffff;
   background-image: url("../images/contact-bg.jpg");
   background-position:60% 0;
-  background-size:contain;
+  background-size:cover;
 
   position: relative;
 }
@@ -587,7 +587,8 @@ h2 {
 
 #contact h3 {
   text-transform:inherit;
-  color: #373737;
+  color: #ffffff;
+    font-size: 21px;
 }
 
 #contact-section h3 {
@@ -595,8 +596,8 @@ h2 {
 }
 
 #contact address {
-  font-size: 18px;
-  color: #373737;
+  font-size: 21px;
+  color: #ffffff;
 }
 
 .contact-text {
@@ -649,11 +650,11 @@ h2 {
 **************************/
 
 #footer {
-  background-color: darkgray;
+  background-color: white;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  color: black;
   font-size: 20px;
   padding: 35px 0;
 }

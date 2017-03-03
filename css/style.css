@@ -81,14 +81,15 @@
 }
 
 .contact-text{
-padding-top: 50px;
-    padding-bottom: 30px;
+padding-top: 100px;
+    padding-bottom: 80px;
     text-align: center;
+    color: white;
 }
 
 .contact-address{
 
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    padding-bottom: 80px;
     text-align: center;
 }
