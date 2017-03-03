@@ -48,9 +48,8 @@
 }
 .time-to{
   margin:15px;
-  color: #00acc1;
+  color: black;
   font-weight:bold;
-  font-family: bangers;
 	z-index:999;
 	position: absolute;
 }
@@ -72,11 +71,24 @@
 
 #sponsor .item li a
 {
-	color:#f5f5f5;
+	color:black;
 }
 #sponsor .item li
 {
   width:35%;
   height:50px;
   margin-left:10%;
+}
+
+.contact-text{
+padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact-address{
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
 }

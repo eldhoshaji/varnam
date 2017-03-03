@@ -23,28 +23,7 @@
 		<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 		<style>
 			@import url(https://fonts.googleapis.com/css?family=Bangers);
-			@media (max-width:499px)
-			{
-				.time-to
-				{
-					font-size:23px;
-					padding-top:24%;
-					margin-left:50%;
-					color:blue;
-					font-family:bangers;
-				}
-			}
-			@media (min-width:500px)
-			{
-				.time-to
-				{
-					font-size:50px;
-					padding-top:35%;
-					margin-left:60%;
-					color:#1e88e5;
-					font-family:bangers;
-				}
-			}
+			
 			@for $i from 1 through 6 {
 				@keyframes preload-show-#{$i}{
 					from{
@@ -164,9 +143,7 @@
 		</header>
 		<section id="home" class="section">
 			<div id="main-slider" class="carousel slide" data-ride="carousel">
-				<div class='wrap' ng-app='app'>
-					<span countdown='' date='March 10, 2017 12:00:00' class="time-to">Coming In</span>
-				</div>
+
 				<ol class="carousel-indicators">
 					<li data-target="#main-slider" data-slide-to="0" class="active"></li>
 					<li data-target="#main-slider" data-slide-to="1"></li>
@@ -182,6 +159,8 @@
 					<div class="item">
 						<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
 					</div>
+                    
+                    
 				</div>
 			</div>
 		</section>
@@ -1250,7 +1229,7 @@
 				<img class="img-responsive" src="images/butterfly.png" alt="guitar">
 			</div>
 			<div class="about-content">
-				<h2>About Varnam</h2>
+                <h2>About Varnam</h2>
 				<p>With over 30 events spread over six days, Varnam aims to create a time of ethereal bliss for all its patreons. With a wide variety of events to choose from, spread over 10 modules, patreons of the fest will always have a great time taking part in or viewing the various events of their choice and are sure to experince the 'Eternal Dream Time' while in Varnam.</p>
 			</div>
 		</section>
@@ -1287,30 +1266,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="light">
-					<img class="img-responsive" src="images/light.png" alt="">
-				</div>
+				
 			</div>
 		</section><!--/#sponsor-->
 		<section id="contact" class="section">
 			<div class="contact-section">
-				<div class="ear-piece">
-					<img class="img-responsive" src="images/ear-piece.png" alt="">
-				</div>
+				
 				<div class="container">
+                    <h1 style="color:black;text-align:center;"><b>Get in touch</b> </h1>
 					<div class="row">
-					<div class="col-sm-3"><br /></div>
-						<div class="col-sm-3 col-sm-offset-4">
+					<div class="col-sm-2"><br /></div>
+                        
+						<div class="col-sm-4 ">
+                            
 							<div class="contact-text">
-								<h3>Contact</h3>
+                                <h3><b>Contact</b></h3>
 								<address>
-									PROF:Baiju Karun : 9447009648 <br>
-                                    PROF: Anas.M : 7561017476 <br>
+                                
+									Prof. Baiju Karun : 9447009648 <br>
+                                    Prof. Anas.M : 7561017476 <br>
                                     Sooraj Santhosh: 9567843163
 								</address>
 							</div>
+                        </div>
+                        
+                            
+                        
+                            <div class="col-sm-4 ">
+                               
 							<div class="contact-address">
-								
+                                <h3><b>Address</b></h3>
 								<address>
 									Muthoot Institute of Technology and Science <br>
                                     Varikoli P.O, Puthencruz- 682308 <br>
@@ -1318,7 +1303,8 @@
                                     www.mgits.ac.in
 								</address>
 							</div>
-						</div>
+					
+                        </div>
 					</div>
 				</div>
 			</div>
