@@ -648,8 +648,7 @@ h2 {
 **************************/
 
 #footer {
-  background-color: #212121;
-  background-image: url("../images/footer-bg.jpg");
+  background-color: darkgray;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -664,4 +663,17 @@ h2 {
 
 #footer a:hover {
   color:#1B7B98
+}
+
+
+.btn-info {
+    color: #fff;
+    background-color:saddlebrown;
+    
+}
+
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: sienna;
 }
