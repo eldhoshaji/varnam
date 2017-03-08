@@ -22,32 +22,70 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 		<style>
-			@import url(https://fonts.googleapis.com/css?family=Bangers);
-<<<<<<< HEAD
-			
-=======
-			@media (max-width:499px)
-			{
-				.time-to
-				{
-					font-size:23px;
-					padding-top:24%;
-					margin-left:50%;
-					color:#fff;
-					font-family:bangers;
-				}
-			}
-			@media (min-width:500px)
-			{
-				.time-to
-				{
-					font-size:50px;
-					padding-top:25%;
-					margin-left:60%;
-					color:#fff;
-					font-family:bangers;
-				}
-			}
+		.modalg {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-contentg {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Add Animation */
+.modal-contentg{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.closemodal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closemodal:hover,
+.closemoda;:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-contentg {
+        width: 100%;
+    }
+}	
 >>>>>>> origin/master
 			@for $i from 1 through 6 {
 				@keyframes preload-show-#{$i}{
@@ -1269,17 +1307,20 @@
            <h1>gallery</h1>
   <div class="container1">
 		<div id="carousel3">
-			<figure><image src=".//images/gallery/1.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/2.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/3.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/4.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/5.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/6.JPG" width="200" height="120" alt=""></figure>
-            <figure><image src=".//images/gallery/7.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/8.JPG" width="200" height="120" alt=""></figure>
-			<figure><image src=".//images/gallery/9.JPG" width="200" height="120" alt=""></figure>
-           
+			<figure id="f1"><image src=".//images/gallery/f1.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f2"><image src=".//images/gallery/f2.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f3"><image src=".//images/gallery/f3.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f4"><image src=".//images/gallery/f4.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f5"><image src=".//images/gallery/f5.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f6"><image src=".//images/gallery/f6.JPG" width="200" height="120" alt=""></figure>
+            <figure id="f7"><image src=".//images/gallery/f7.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f8"><image src=".//images/gallery/f8.JPG" width="200" height="120" alt=""></figure>
+			<figure id="f9"><image src=".//images/gallery/f9.JPG" width="200" height="120" alt=""></figure>
 		</div>
+	</div>
+	<div id="myModalg" class="modalg">
+		<span class="closemodalg">&times;</span>
+		<img class="modal-contentg" id="img01g">
 	</div>
 		</section>
                 
@@ -1365,7 +1406,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/smoothscroll.js"></script>
@@ -1373,7 +1413,6 @@
 		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
 		<script type="text/javascript" src="js/jquery.nav.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/timer.js"></script>
 		<script>
 			jQuery(document).ready(function($) {
 				$(window).load(function(){
@@ -1382,10 +1421,16 @@
 			});
 			$(".modal-body > ol").prepend("<b>Rules</b>");
 			$(".modal-body > ol > b").css("textAlign","center");
-			jQuery(document).ready(function($){
-				$("figure").click(function(){
-					
-				});
+			$("figure").click(function(){
+				var id = $(this).attr('id');
+				var modal = document.getElementById('myModalg');
+				var modalImg = document.getElementById("img01g");
+				modalImg.src ="images/gallery/"+id+".JPG" ;
+				modal.style.display = "block";
+				var span = document.getElementsByClassName("closemodalg")[0];
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
 			});
 			</script>
 	</body>
