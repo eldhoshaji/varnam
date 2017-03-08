@@ -243,6 +243,83 @@ h2 {
   border: 1px solid #fff;
 }
 
+
+
+/*******/
+
+#gallery-slider img {
+  width: 100%
+}
+
+#gallery-slider
+.carousel-caption {
+  background: none repeat scroll 0 0 #000000;
+  bottom: 35%;
+  float: center;
+  left: 0;
+  opacity: 0.8;
+  padding:10px 60px 35px;
+  text-transform: uppercase;
+  color: #fff;
+    left:20%;
+}
+
+
+#gallery-slider
+.carousel-caption h2 {
+  font-size: 38px;
+
+}
+
+#gallery-slider
+.carousel-caption h4 {
+  font-size: 24px;
+}
+
+#gallery-slider
+.carousel-caption a {
+  font-size: 22px;
+  color: #2da1c5
+}
+
+#gallery-slider
+.carousel-caption a:hover {
+  color: #2588a6
+}
+
+#gallery-slider
+.carousel-caption a:hover i {
+  margin-left: 35px
+}
+
+#gallery-slider
+.carousel-caption a i {
+  margin-left: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery-slider
+.carousel-indicators li {
+  background-color:#1B7B98;
+  border: 1px solid #1B7B98;
+}
+
+#gallery-slider
+.carousel-indicators li.active {
+  background-color:#fff;
+  border: 1px solid #fff;
+}
+
+
+
+
+
+
+
 /*************************
 *******Explore CSS******
 **************************/
@@ -671,6 +748,7 @@ h2 {
 .btn-info {
     color: #fff;
     background-color:saddlebrown;
+    border-color: saddlebrown;
     
 }
 
