@@ -22,71 +22,71 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 		<style>
-		.modalg {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+			.modalg {
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				padding-top: 100px; /* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				height: 100%; /* Full height */
+				overflow: auto; /* Enable scroll if needed */
+				background-color: rgb(0,0,0); /* Fallback color */
+				background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
 
-/* Modal Content (image) */
-.modal-contentg {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
+			/* Modal Content (image) */
+			.modal-contentg {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+			}
 
-/* Add Animation */
-.modal-contentg{    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
+			/* Add Animation */
+			.modal-contentg{    
+				-webkit-animation-name: zoom;
+				-webkit-animation-duration: 0.6s;
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
 
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
+			@-webkit-keyframes zoom {
+				from {-webkit-transform:scale(0)} 
+				to {-webkit-transform:scale(1)}
+			}
 
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
+			@keyframes zoom {
+				from {transform:scale(0)} 
+				to {transform:scale(1)}
+			}
 
-/* The Close Button */
-.closemodal {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+			/* The Close Button */
+			.closemodal {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				color: #f1f1f1;
+				font-size: 40px;
+				font-weight: bold;
+				transition: 0.3s;
+			}
 
-.closemodal:hover,
-.closemoda;:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
+			.closemodal:hover,
+			.closemoda;:focus {
+				color: #bbb;
+				text-decoration: none;
+				cursor: pointer;
+			}
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-contentg {
-        width: 100%;
-    }
-}	
->>>>>>> origin/master
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+				.modal-contentg {
+					width: 100%;
+				}
+			}	
+			>>>>>>> origin/master
 			@for $i from 1 through 6 {
 				@keyframes preload-show-#{$i}{
 					from{
@@ -128,48 +128,48 @@
 				}
 			}
 			.preloader{
-  			position: absolute;
-  			top: 50%;
-  			left: 50%;
-				font-size: 20px;
-				display: block;
-				width: 3.75em;
-				height: 4.25em;
-				margin-left: -1.875em;
-  			margin-top: -2.125em;
-				transform-origin: center center;
-				transform: rotateY(180deg) rotateZ(-60deg);
-				.slice{
-					border-top: 1.125em solid transparent;
-					border-right: none;
-					border-bottom: 1em solid transparent;
-					border-left: 1.875em solid #f7484e;
-					position: absolute;
-					top: 0px;
-					left: 50%;
-					transform-origin: left bottom;
-					border-radius: 3px 3px 0 0;
-				}
-				@for $i from 1 through 6
-				{
-					.slice:nth-child(#{$i})
-					{
-		  			transform: rotateZ(60* $i + deg) rotateY(0deg) rotateX(0);
-		  			animation: .15s linear .9 - $i*.08s preload-hide-#{$i} both 1;
-		  		}
-				}
-				&.loading
-				{
-					animation: 2s preload-flip steps(2) infinite both;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+					font-size: 20px;
+					display: block;
+					width: 3.75em;
+					height: 4.25em;
+					margin-left: -1.875em;
+				margin-top: -2.125em;
+					transform-origin: center center;
+					transform: rotateY(180deg) rotateZ(-60deg);
+					.slice{
+						border-top: 1.125em solid transparent;
+						border-right: none;
+						border-bottom: 1em solid transparent;
+						border-left: 1.875em solid #f7484e;
+						position: absolute;
+						top: 0px;
+						left: 50%;
+						transform-origin: left bottom;
+						border-radius: 3px 3px 0 0;
+					}
 					@for $i from 1 through 6
 					{
-			  		.slice:nth-child(#{$i})
+						.slice:nth-child(#{$i})
 						{
-							animation: 2s preload-cycle-#{$i} linear infinite both;
-			  			transform: rotateZ(60* $i + deg) rotateY(90deg) rotateX(0);
-			  		}
+							transform: rotateZ(60* $i + deg) rotateY(0deg) rotateX(0);
+							animation: .15s linear .9 - $i*.08s preload-hide-#{$i} both 1;
+						}	
 					}
-				}
+					&.loading
+					{
+						animation: 2s preload-flip steps(2) infinite both;
+						@for $i from 1 through 6
+						{
+						.slice:nth-child(#{$i})
+							{
+								animation: 2s preload-cycle-#{$i} linear infinite both;
+							transform: rotateZ(60* $i + deg) rotateY(90deg) rotateX(0);
+						}
+						}
+					}
 			}
 		</style>
 	</head>
@@ -228,7 +228,6 @@
 				</div>
 			</div>
 		</section>
-        
 		<section class="none">
 			<div id="essay" class="modal fade" role="dialog">
 				<div class="modal-content">
@@ -1102,7 +1101,7 @@
 				</div>
 			</div>
 		</section>
-    <section id="event2" class="section">
+		<section id="event2" class="section">
 			<div class="container">
 				<div class="col-sm-12 col-md-9">
 					<div id="event-carousel2" class="carousel slide" data-interval="false">
@@ -1298,46 +1297,35 @@
 				<p>With over 30 events spread over six days, Varnam aims to create a time of ethereal bliss for all its patreons. With a wide variety of events to choose from, spread over 10 modules, patreons of the fest will always have a great time taking part in or viewing the various events of their choice and are sure to experince the 'Eternal Dream Time' while in Varnam.</p>
 			</div>
 		</section>
-        
-       
-        
-     
-        
-        <section id="gallery" class="section">
-           <h1>gallery</h1>
-  <div class="container1">
-		<div id="carousel3">
-			<figure id="f1"><image src=".//images/gallery/f1.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f2"><image src=".//images/gallery/f2.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f3"><image src=".//images/gallery/f3.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f4"><image src=".//images/gallery/f4.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f5"><image src=".//images/gallery/f5.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f6"><image src=".//images/gallery/f6.JPG" width="200" height="120" alt=""></figure>
-            <figure id="f7"><image src=".//images/gallery/f7.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f8"><image src=".//images/gallery/f8.JPG" width="200" height="120" alt=""></figure>
-			<figure id="f9"><image src=".//images/gallery/f9.JPG" width="200" height="120" alt=""></figure>
-		</div>
-	</div>
-	<div id="myModalg" class="modalg">
-		<span class="closemodalg">&times;</span>
-		<img class="modal-contentg" id="img01g">
-	</div>
+		<section id="gallery" class="section">
+           <h1>Gallery</h1>
+			<div class="container1">
+				<div id="carousel3">
+					<figure id="f1"><image src=".//images/gallery/f1.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f2"><image src=".//images/gallery/f2.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f3"><image src=".//images/gallery/f3.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f4"><image src=".//images/gallery/f4.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f5"><image src=".//images/gallery/f5.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f6"><image src=".//images/gallery/f6.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f7"><image src=".//images/gallery/f7.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f8"><image src=".//images/gallery/f8.JPG" width="200" height="120" alt=""></figure>
+					<figure id="f9"><image src=".//images/gallery/f9.JPG" width="200" height="120" alt=""></figure>
+				</div>
+			</div>
+			<div id="myModalg" class="modalg">
+				<span class="closemodalg">&times;</span>
+				<img class="modal-contentg" id="img01g"/>
+			</div>
 		</section>
-                
-                
-                 <section id="score" class="section">
-           
-                     <div></div>
-  
+		<section id="score" class="section">
+			<div></div>
 		</section>
-        
 		<section id="sponsor" class="section">
 			<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12">
 							<h2>Downloads</h2>
-							
 							<div class="carousel-inner ">
 								<div class="item active " style="padding-left:100px;">
 									<ul>
@@ -1349,39 +1337,29 @@
 										<li><h3><b><a href="files/file6.pdf" target="_blank">File</a></b></h3></li>
 									</ul>
 								</div>
-								
 							</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</section><!--/#sponsor-->
 		<section id="contact" class="section">
 			<div class="contact-section">
-				
 				<div class="container">
                     <h1 style="color:white;text-align:center;"><b>Get in touch</b> </h1>
 					<div class="row">
 					<div class="col-sm-2"><br /></div>
-                        
 						<div class="col-sm-4 ">
-                            
 							<div class="contact-text">
                                 <h3><b>Contact</b></h3>
 								<address>
-                                
 									Prof. Baiju Karun : 9447009648 <br>
                                     Prof. Anas.M : 7561017476 <br>
                                     Sooraj Santhosh: 9567843163
 								</address>
 							</div>
                         </div>
-                        
-                            
-                        
-                            <div class="col-sm-4 ">
-                               
+						<div class="col-sm-4 ">
 							<div class="contact-address">
                                 <h3><b>Address</b></h3>
 								<address>
@@ -1391,7 +1369,6 @@
                                     www.mgits.ac.in
 								</address>
 							</div>
-					
                         </div>
 					</div>
 				</div>
@@ -1402,7 +1379,6 @@
 				<div class="text-center">
 					<p> Connect With Us</p>
                     <a href="https://www.facebook.com/Varnam2k17/?ref=page_internal"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
-
 				</div>
 			</div>
 		</footer>
@@ -1428,6 +1404,6 @@
 					modal.style.display = "none";
 				}
 			});
-			</script>
+		</script>
 	</body>
 </html>
