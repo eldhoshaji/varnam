@@ -2,7 +2,6 @@
 	z-index:0;
 	position: relative;
 }
-@import url(https://fonts.googleapis.com/css?family=Bangers);
 .modal{
 	margin-left:10%;
 	margin-top:15%;
@@ -45,28 +44,6 @@
 }
 .rule :hover{
 	text-decoration:underline;
-}
-.time-to{
-  margin:15px;
-  color: black;
-  font-weight:bold;
-	z-index:999;
-	position: absolute;
-}
-@media (min-width: 500px)
-{
-  .time-to
-  {
-    font-size:3em;
-  }
-}
-@media (max-width:499px)
-{
-  .time-to
-  {
-    font-size:2em;
-    margin-left: 100px;
-  }
 }
 
 #sponsor .item li a
